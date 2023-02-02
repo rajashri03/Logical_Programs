@@ -8,6 +8,10 @@ namespace LogicalPrograms
         {
             VendingMachine machine = new VendingMachine();
             machine.MinNumberOfNote(5);
+
+            string str = "XYZ";
+            int n = str.Length;
+            Permutation.permute(str, 0, n - 1);
         }
     }
 }
