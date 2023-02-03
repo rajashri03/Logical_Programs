@@ -9,7 +9,8 @@ namespace LogicalPrograms
             while (true)
             {
                 Console.WriteLine("\nEnter the option to perform the operation \n1) Pair Intersection \n2) Vending machine\n3)Permutation of string\n" +
-                    "4)Convert binary to linked list\n5)");
+                    "4)Convert binary to linked list\n5)Find n digit numbers with given sum of digits\n6)" +
+                    "picking Square");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -50,6 +51,10 @@ namespace LogicalPrograms
                         int target = 4;   
                         string result = "";
                         NumberWithSum.FindNdigitNum(result, num, target);
+                        break;
+                    case 6:
+                        int[] InputArr = { 169, 145, 225, 211, 121, 183, 100, 111, 196, 214, 275 };
+                        PickingSquare.findingSquares(InputArr);
                         break;
                 }
             }
