@@ -9,7 +9,7 @@ namespace LogicalPrograms
             while (true)
             {
                 Console.WriteLine("\nEnter the option to perform the operation \n1) Pair Intersection \n2) Vending machine\n3)Permutation of string\n" +
-                    "4)Convert binary to linked list");
+                    "4)Convert binary to linked list\n5)");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -45,7 +45,12 @@ namespace LogicalPrograms
                         Node head = ConvertBTTOLinkedList.sortedList(null, root);
                         ConvertBTTOLinkedList.print(head);
                         break;
-
+                    case 5:
+                        int num = 4;     
+                        int target = 4;   
+                        string result = "";
+                        NumberWithSum.FindNdigitNum(result, num, target);
+                        break;
                 }
             }
         }
